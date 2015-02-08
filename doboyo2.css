@@ -69,7 +69,7 @@
 
 .listing-template .section-content .gallery-container {
 	height: 600px;
-	width:412px;
+	width:420px;
 	border: 1px solid #D7E3E9;
 	margin-left: 5px;
 }
@@ -93,4 +93,91 @@
 	z-index:0;
 	max-height: 400px;
 	max-width: 400px;
+}
+
+.listing-template .section-content .gallery-container .thumb-set {
+	position:relative; 
+	height:150px;
+	width:400px;
+	left:5px; 
+	top:30px; 
+	/*background-color:#2B596F;*/
+	/*border: 1px solid #D7E3E9;*/
+}
+
+.listing-template .section-content .gallery-container .thumb-set ul {
+	list-style:none; 
+	padding:5px; 
+	margin:0;
+	float:left;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li {
+	display:inline; 
+	width:65px; 
+	height:65px; 
+	float:left; 
+	/*padding-left:1px;*/
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a {
+	display:block; 
+	width:53px; 
+	height:53px; 
+	text-decoration:none; 
+	padding:0px; 
+	border:1px solid #D7E3E9;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a .small-thumb {
+	width:53px; 
+	height:53px; 
+	border:0;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a .big-pic {
+	max-height: 400px;
+	max-width: 400px;
+
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a:hover,
+.listing-template .section-content .gallery-container .thumb-set li a:active,
+.listing-template .section-content .gallery-container .thumb-set li a:focus {
+	white-space:normal; 
+	border-color:#2B596F; 
+	border-style: dotted;
+	outline:0;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a .lg-cont {
+	position:absolute; 
+	left:-9999px; 
+	display:block; 
+	width:400px; 
+	height:400px; 
+	background:#2B596F; 
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a .lg-cont .testing {
+	/*display:block; */
+	width:400px; 
+	height:400px; 
+	text-align:center; 
+	display:table-cell; 
+	vertical-align:middle;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a:hover .lg-cont {
+	position:absolute; 
+	left:1px; 
+	top:-426px; 
+	z-index:100;
+	cursor: default;
+}
+
+.listing-template .section-content .gallery-container .thumb-set li a:active .lg-cont,
+.listing-template .section-content .gallery-container .thumb-set li a:focus .lg-cont {
+	position:absolute; 
+	left:1px; top:-426px; 
 }
