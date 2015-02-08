@@ -8,24 +8,34 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>DOBOYO ReFASHION Test  Template 2.0</title>\n	<link rel=\"stylesheet\" href=\"doboyo2.css\">\n	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>\n</head>\n<body>\n\n	<div class=\"listing-template\">\n		<div class=\"section-hdr\">\n			<img class=\"top-logo\" src=\"http://i76.photobucket.com/albums/j39/christopherepearson1/Web%20Graphics/logo3_zpsa8816cd3.png\" alt=\"logo\" />\n		</div>\n		<div class=\"nav-bar\">\n			<ul>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Maternity-Fashion_W0QQfsubZ5511741012\">maternity</a>\n\n				</li>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Womens-Fashion_W0QQfsubZ5511742012\">women's</a>\n\n				</li>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Mens-Fashion_W0QQfsubZ5511743012\">men's</a>\n\n				</li>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Youth-Fashion_W0QQfsubZ5511744012\">youth</a>\n\n				</li>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Baby_W0QQfsubZ5511745012\">baby</a>\n\n				</li>\n				<li><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo_Household_W0QQfsubZ5511751012\">houshold</a>\n\n				</li>\n				<li id=\"unique-nav\"><a target=\"_blank\" href=\"http://stores.ebay.com/doboyo\">STORE HOME</a>\n				</li>\n			</ul>\n		</div>\n	</div>\n\n\n	\n",
 			"file": "doboyo2.html",
-			"file_size": 1550,
-			"file_write_time": 130678191027876036,
 			"settings":
 			{
-				"buffer_size": 1375,
+				"buffer_size": 6364,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": ".listing-template {\n    max-width: 750px;\n    background-color: #7496a7;\n    border: 1px solid #000;\n    margin-left: auto;\n    margin-right: auto;\n}\n.listing-template .section-hdr {\n    padding-top: 10px;\n    padding-bottom: 0px;\n}\n.listing-template .section-hdr .top-logo {\n    max-width: 350px;\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.listing-template .nav-bar {\n    width: 700px;\n    border: 0px solid #000;\n    text-align: center;\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.listing-template .nav-bar ul {\n    padding-left: 0px;\n    padding-right: 0px;\n}\n.listing-template .nav-bar a {\n    color: #D7E3E9;\n    font-family: oswald, sans-serif;\n    font-size: 14px;\n    font-weight: 300;\n    padding: 8px;\n    text-transform: uppercase;\n}\n.listing-template .nav-bar li {\n    display:inline-block;\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border: 1px solid #D7E3E9;\n}\n.listing-template .nav-bar li:hover {\n    background-color:#2B596F;\n    border: 1px dotted #D7E3E9\n}\n\n#unique-nav {\n    background-color:#2B596F;\n}\n\n#unique-nav:hover {\n    background-color:#9e3754;\n}\n",
-			"file": "doboyo2.css",
-			"file_size": 1194,
-			"file_write_time": 130678191669882756,
+			"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
 			"settings":
 			{
-				"buffer_size": 1139,
+				"buffer_size": 11889,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doboyo2.css",
+			"settings":
+			{
+				"buffer_size": 3755,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
+			"settings":
+			{
+				"buffer_size": 4641,
 				"line_ending": "Windows"
 			}
 		}
@@ -102,6 +112,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"listing-content",
+			"listing",
 			">\n"
 		],
 		"highlight": true,
@@ -129,15 +141,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1375,
+						"buffer_size": 6364,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1262,
-								1262
+								164,
+								260
 							]
 						],
 						"settings":
@@ -150,6 +162,35 @@
 					},
 					"stack_index": 1,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2378,
+								7067
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
 				}
 			]
 		},
@@ -158,20 +199,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "doboyo2.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1139,
+						"buffer_size": 3755,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1098,
-								1098
+								0,
+								3755
 							]
 						],
 						"settings":
@@ -179,10 +220,45 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1537,
+								3518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1995.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -204,13 +280,19 @@
 				0,
 				0,
 				1,
-				1
+				2
 			],
 			[
 				1,
 				0,
 				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
@@ -222,6 +304,7 @@
 		"rows":
 		[
 			0.0,
+			0.874680306905,
 			1.0
 		]
 	},
@@ -264,7 +347,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"last_automatic_layout":
@@ -273,13 +356,19 @@
 				0,
 				0,
 				1,
-				1
+				2
 			],
 			[
 				1,
 				0,
 				2,
 				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		]
 	},
