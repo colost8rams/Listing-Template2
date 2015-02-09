@@ -65,11 +65,67 @@
 	padding-top:15px;
 	padding-bottom: 15px;
 	/*border: 1px solid #D7E3E9;*/
+	height:800px;
 }
 
 .listing-template .section-content .item-details{
-	height: 600px;
-	width: 280px;
+	height:620px;
+	width: 281px;
 	border: 1px solid #D7E3E9;
-	
+	margin-left: 5px;
+	padding:5px;
+	float: right;
+}
+
+.listing-template .section-content .item-details h1 {
+	font-family: 'Oswald', sans-serif;
+	color:#D7E3E9;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: justify;
+	padding-bottom: 0px;
+	line-height:0.75;
+}
+
+.listing-template .section-content .item-details h3 {
+	font-family: 'Oswald', sans-serif;
+	color:#9e3754;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 0;
+	padding-bottom: 10px;
+	line-height:0.75;
+}
+
+.listing-template .section-content .gallery {
+	border: 1px solid #333; 
+    padding: 5px;
+    width: 440px;
+    height: 620px;
+    text-align:center;
+    float: left;
+}
+
+.listing-template .section-content .gallery .thumbnails img {
+	height: 60px;
+    max-width:60px;
+    border: 1px solid #D7E3E9;
+    padding: 1px;
+    margin: 0 5px 5px 0;
+}
+
+.listing-template .section-content .gallery .thumbnails img:hover {
+	border: 1px solid #2B596F;
+    cursor:pointer;
+}
+
+.listing-template .section-content .gallery .preview {
+	text-align:center;
+}
+
+.listing-template .section-content .gallery .preview img {
+	border: 4px solid #D7E3E9;
+    padding: 1px;
+    max-height: 400px;
+    max-width: 400px;
 }
