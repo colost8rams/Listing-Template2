@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"m",
+				"min-height"
+			],
+			[
+				"p",
+				"padding"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +19,7 @@
 			"file": "doboyo2.html",
 			"settings":
 			{
-				"buffer_size": 6364,
+				"buffer_size": 2030,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +35,7 @@
 			"file": "doboyo2.css",
 			"settings":
 			{
-				"buffer_size": 3755,
+				"buffer_size": 2455,
 				"line_ending": "Windows"
 			}
 		},
@@ -112,6 +120,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"doboyo_Household_W0QQfsubZ5511751012",
 			"listing-content",
 			"listing",
 			">\n"
@@ -141,15 +150,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6364,
+						"buffer_size": 2030,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								164,
-								260
+								2029,
+								2029
 							]
 						],
 						"settings":
@@ -157,7 +166,7 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 660.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -176,8 +185,8 @@
 						"selection":
 						[
 							[
-								2378,
-								7067
+								2491,
+								2599
 							]
 						],
 						"settings":
@@ -186,7 +195,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 660.0,
+						"translation.y": 735.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -195,7 +204,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -204,15 +213,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3755,
+						"buffer_size": 2455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								3755
+								1459,
+								1486
 							]
 						],
 						"settings":
@@ -220,18 +229,12 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 943.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 3,
 					"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
@@ -245,8 +248,8 @@
 						"selection":
 						[
 							[
-								1537,
-								3518
+								10,
+								10
 							]
 						],
 						"settings":
@@ -255,10 +258,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1995.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -280,31 +283,24 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.360645776063,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.874680306905,
 			1.0
 		]
 	},
@@ -347,7 +343,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"last_automatic_layout":
@@ -356,19 +352,13 @@
 				0,
 				0,
 				1,
-				2
+				1
 			],
 			[
 				1,
 				0,
 				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		]
 	},
