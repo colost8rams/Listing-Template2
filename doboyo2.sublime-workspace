@@ -4,7 +4,6 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
 				"pa",
 				"padding"
 			],
@@ -23,14 +22,6 @@
 			[
 				"U",
 				"UL	Tag"
-=======
-				"p",
-				"padding-left"
-			],
-			[
-				"pa",
-				"padding-left"
->>>>>>> origin/master
 			],
 			[
 				"mar",
@@ -43,54 +34,16 @@
 			[
 				"marg",
 				"margin-top"
-<<<<<<< HEAD
-=======
-			],
-			[
-				"m",
-				"min-height"
->>>>>>> origin/master
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-<<<<<<< HEAD
 			"file": "doboyo2.css",
 			"settings":
 			{
-				"buffer_size": 2,
-=======
-			"file": "doboyo2.html",
-			"settings":
-			{
-				"buffer_size": 4676,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
-			"settings":
-			{
-				"buffer_size": 11889,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "doboyo2.css",
-			"settings":
-			{
-				"buffer_size": 2940,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
-			"settings":
-			{
-				"buffer_size": 4641,
->>>>>>> origin/master
+				"buffer_size": 3567,
 				"line_ending": "Windows"
 			}
 		}
@@ -127,28 +80,16 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.html",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.css",
 		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/index.php",
 		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/js/simpletabs_1.3.js",
-=======
-		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/index.php",
-		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/js/simpletabs_1.3.js",
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
->>>>>>> origin/master
 		"/C/Users/Chris and Barb/Desktop/HTML/hoverbox/hoverbox/css/hoverbox.css",
 		"/C/Users/Chris and Barb/Desktop/HTML/hoverbox/hoverbox/index.html",
 		"/C/Users/Chris and Barb/Desktop/HTML/Doboyo Listing/index2.1.html",
 		"/C/Users/Chris and Barb/Desktop/HTML/Doboyo Listing/index.html",
-<<<<<<< HEAD
-=======
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.css",
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.html",
->>>>>>> origin/master
 		"/C/Users/Chris and Barb/Desktop/index.html",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/.gitattributes",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/README.md",
@@ -211,148 +152,31 @@
 			[
 				{
 					"buffer": 0,
-<<<<<<< HEAD
 					"file": "doboyo2.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2,
-=======
-					"file": "doboyo2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4676,
->>>>>>> origin/master
+						"buffer_size": 3567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
 								0,
 								0
-=======
-								2346,
-								2347
->>>>>>> origin/master
 							]
 						],
 						"settings":
 						{
-<<<<<<< HEAD
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-=======
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 495.0,
->>>>>>> origin/master
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-<<<<<<< HEAD
-=======
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11889,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6626,
-								6649
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1395.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "doboyo2.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1706,
-								1706
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1080.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3689,
-								4158
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 720.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
->>>>>>> origin/master
 				}
 			]
 		}
@@ -374,24 +198,11 @@
 				0,
 				1,
 				1
-<<<<<<< HEAD
-=======
-			],
-			[
-				1,
-				0,
-				2,
-				1
->>>>>>> origin/master
 			]
 		],
 		"cols":
 		[
 			0.0,
-<<<<<<< HEAD
-=======
-			0.5,
->>>>>>> origin/master
 			1.0
 		],
 		"rows":
@@ -449,15 +260,6 @@
 				0,
 				1,
 				1
-<<<<<<< HEAD
-=======
-			],
-			[
-				1,
-				0,
-				2,
-				1
->>>>>>> origin/master
 			]
 		]
 	},
