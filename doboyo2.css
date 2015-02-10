@@ -22,6 +22,7 @@
 	font-family: oswald, sans-serif;
 	color: #D7E3E9;
 	font-weight: 300;
+	padding-left: 15px;
 }
 
 /*BASE STYLE FOR H6 HEADERS (currently used in footer)*/
@@ -45,6 +46,7 @@
 	margin-right: auto;
 }
 
+/*STYLE FOR TOP NAV BAR WRAPPER*/
 .listing-template .nav-bar {
 	width: 700px;
 	/*border: 1px solid #D7E3E9;*/
@@ -58,6 +60,7 @@
 	padding:0;
 }
 
+/*STYLE FOR NAV BAR LINKS (font related)*/
 .listing-template .nav-bar a {
 	color: #D7E3E9;
 	font-family: oswald, sans-serif;
@@ -68,6 +71,7 @@
 	text-decoration: none;
 }
 
+/*STYLE FOR NAV BAR LIST ITEMS (box related)*/
 .listing-template .nav-bar li {
 	display:inline-block;
 	padding-top: 10px;
@@ -75,6 +79,7 @@
 	border: 1px solid #D7E3E9;
 }
 
+/*STYLE FOR NAV BAR BOXES ON HOVER*/
 .listing-template .nav-bar li:hover {
 	background-color:#2B596F;
 	border: 1px dotted #D7E3E9
@@ -124,11 +129,11 @@
 }
 
 .listing-template .section-content .gallery {
+	
 	border: 1px solid #D7E3E9; 
-    padding: 1px;
+    padding: 0;
     width: 440px;
-    height: 650px;
-    text-align:center;
+    min-height: 350px;
     float: left;
     margin: 2px
 }
@@ -136,6 +141,7 @@
 .listing-template .section-content .gallery ul {
 	padding: 0;
 	margin: 0;
+	text-align:center;
 }
 
 .listing-template .section-content .gallery li {
@@ -146,32 +152,35 @@
 }
 
 .listing-template .section-content .gallery .thumbnails img {
-	max-height: 60px;
-    max-width:60px;
+	height: 60px;
+    width:60px;
     margin: 0;
     border: 1px solid #D7E3E9;
     padding: 1px;
 }
 
 .listing-template .section-content .gallery .thumbnails img:hover {
-	border: 1px solid #2B596F;
+	border: 1px solid #9e3754;
     cursor:pointer;
 }
 
 .listing-template .section-content .gallery .preview {
 	text-align:center;
+	
+	padding: 0px;
 }
 
 .listing-template .section-content .gallery .preview img {
-	border: 3px solid #D7E3E9;
-    padding: 2px;
+	border: 2px solid #D7E3E9;
+    padding: 1px;
     max-height: 400px;
     max-width: 400px;
+    background-color: #9e3754;
 }
 
 .listing-template .listing-footer {
 	clear: both;
-	margin-top: 100px;
+	margin-top: 10px;
 	text-align: center;
-
 }
+
