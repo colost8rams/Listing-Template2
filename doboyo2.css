@@ -1,1 +1,186 @@
-.
+/***********************************************/
+/*******auction listing stylesheet**************/
+/****Copyright (c) chris e pearson 2013-2015****/
+/***********************************************/
+
+/**{
+	padding: 0;
+	margin: 0;
+}*/
+
+/*STYLE FOR MAIN LISTING CONTAINER*/
+.listing-template {
+	width: 750px;
+	background-color: #7496a7;
+	border: 1px solid #333;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*BASE STYLE FOR PARAGRAPHS*/
+.listing-template p {
+	font-family: oswald, sans-serif;
+	color: #D7E3E9;
+	font-weight: 300;
+	padding-left: 15px;
+}
+
+/*BASE STYLE FOR H6 HEADERS (currently used in footer)*/
+.listing-template h6 {
+	font-family: oswald, sans-serif;
+	color: #D7E3E9;
+	font-weight: 300;
+}
+
+/*BASE STYLE FOR THE HEADER SECTION*/
+.listing-template .section-hdr {
+	margin-top: 10px;
+	width: 100%;
+}
+
+/*STYLE FOR THE LOGO IMAGE*/
+.listing-template .section-hdr .top-logo {
+	max-width: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*STYLE FOR TOP NAV BAR WRAPPER*/
+.listing-template .nav-bar {
+	width: 700px;
+	/*border: 1px solid #D7E3E9;*/
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.listing-template .nav-bar ul {
+	padding:0;
+}
+
+/*STYLE FOR NAV BAR LINKS (font related)*/
+.listing-template .nav-bar a {
+	color: #D7E3E9;
+	font-family: oswald, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 8px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*STYLE FOR NAV BAR LIST ITEMS (box related)*/
+.listing-template .nav-bar li {
+	display:inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #D7E3E9;
+}
+
+/*STYLE FOR NAV BAR BOXES ON HOVER*/
+.listing-template .nav-bar li:hover {
+	background-color:#2B596F;
+	border: 1px dotted #D7E3E9
+}
+
+#unique-nav {
+	background-color:#2B596F;
+}
+
+#unique-nav:hover {
+	background-color:#9e3754;
+}
+
+.listing-template .section-content {
+	padding-top:15px;
+	padding-bottom: 15px;
+	/*border: 1px solid #D7E3E9;*/
+	min height:750px;
+}
+
+.listing-template .section-content .item-details{
+	height:650px;
+	width: 280px;
+	/*border: 1px solid #D7E3E9;*/
+	margin: 2px;
+	padding:1px;
+	float: right;
+}
+
+.listing-template .section-content .item-details h1 {
+	font-family: 'Oswald', sans-serif;
+	color:#D7E3E9;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: justify;
+	padding-left: 1px;
+	line-height:0.5;
+}
+
+.listing-template .section-content .item-details h3 {
+	font-family: 'Oswald', sans-serif;
+	color:#9e3754;
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 5px;
+	line-height:0.25;
+}
+
+.listing-template .section-content .gallery {
+	
+	border: 1px solid #D7E3E9; 
+    padding: 0;
+    width: 440px;
+    min-height: 350px;
+    float: left;
+    margin: 2px
+}
+
+.listing-template .section-content .gallery ul {
+	padding: 0;
+	margin: 0;
+	text-align:center;
+}
+
+.listing-template .section-content .gallery li {
+	display:inline-block;
+	height: 64px;
+	width: 64px;
+	padding: 2px 1px 3px 1px
+}
+
+.listing-template .section-content .gallery .thumbnails img {
+	height: 60px;
+    width:60px;
+    margin: 0;
+    border: 1px solid #D7E3E9;
+    padding: 1px;
+}
+
+.listing-template .section-content .gallery .thumbnails img:hover {
+	border: 1px solid #9e3754;
+    cursor:pointer;
+}
+
+.listing-template .section-content .gallery .preview {
+	text-align:center;
+	
+	padding: 0px;
+}
+
+.listing-template .section-content .gallery .preview img {
+	border: 2px solid #D7E3E9;
+    padding: 1px;
+    max-height: 400px;
+    max-width: 400px;
+    background-color: #9e3754;
+}
+
+.listing-template .listing-footer {
+	clear: both;
+	margin-top: 10px;
+	text-align: center;
+}
+
