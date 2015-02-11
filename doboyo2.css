@@ -27,6 +27,7 @@
 
 /*BASE STYLE FOR H6 HEADERS (currently used in footer)*/
 .listing-template h6 {
+    margin: 3px 0 7px 0;
     font-family: oswald, sans-serif;
     color: #D7E3E9;
     font-weight: 300;
@@ -148,6 +149,7 @@
 .listing-template .section-content .gallery .preview {
     text-align:center;
     padding: 5px;
+    height: 410px;
 }
 
 /*STYLE FOR THE PHOTO GALLERY PREVIEW IMAGE (this is the <<BIG>> photo)*/
