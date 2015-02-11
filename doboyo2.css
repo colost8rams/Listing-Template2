@@ -18,10 +18,12 @@
 
 /*BASE STYLE FOR PARAGRAPHS*/
 .listing-template p {
-    font-family: oswald, sans-serif;
-    color: #D7E3E9;
-    font-weight: 300;
-    padding-left: 15px;
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #042839;
+    font-weight: 400;
+    text-align: justify;
+
 }
 
 /*BASE STYLE FOR H6 HEADERS (currently used in footer)*/
@@ -201,11 +203,11 @@
 
 /*STYLE FOR h4 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for condition)*/
 .listing-template .section-content .listing-details h4{
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
     color:#9e3754;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -255,13 +257,14 @@
     font-size: 14px;
     color: #D7E3E9;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .listing-details dd{
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #042839;
-    font-weight: 700;
+    font-weight: 400;
     padding-left: 5px;
     padding-bottom: 5px;
 }
@@ -275,13 +278,13 @@
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomleft: 10px;
     border-bottom-left-radius: 10px;
-    padding: 5px;
+    padding: 0px 10px 5px 10px;
 }
 
 
 /*STYLE FOR THE NOTES SECTION <<CLEAR THE float'S FROM ABOVE>>*****/
 .section-notes {
-    padding-top: 10px;
+    padding-top: 20px;
     clear: both; 
 }
 
