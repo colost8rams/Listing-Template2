@@ -3,10 +3,7 @@
 /****Copyright (c) chris e pearson 2013-2015****/
 /***********************************************/
 
-/**{
-    padding: 0;
-    margin: 0;
-}*/
+
 
 /*STYLE FOR MAIN LISTING CONTAINER*/
 .listing-template {
@@ -32,6 +29,7 @@
     font-family: oswald, sans-serif;
     color: #D7E3E9;
     font-weight: 300;
+    text-align: center;
 }
 
 /*BASE STYLE FOR THE HEADER SECTION*/
@@ -58,6 +56,7 @@
     margin-right: auto;
 }
 
+/*STYLE FOR TOP NAV BAR ul*/
 .listing-template .nav-bar ul {
     padding:0;
 }
@@ -103,37 +102,6 @@
     padding-top:15px;
     padding-bottom: 15px;
     /*border: 1px solid #D7E3E9;*/
-}
-
-/*STYLE FOR THE ITEM DETAILS SUB-SECTION WRAPPER*/
-.listing-template .section-content .item-details{
-    min-height:600px;
-    width: 295px;
-    border: 1px solid #D7E3E9;
-    margin: 2px;
-    padding:1px;
-    float: right;
-}
-
-/*STYLE FOR h1 HEADLINES IN ITEM DETAILS SUB-SECTION (using for designer brand)*/
-.listing-template .section-content .item-details h1 {
-    font-family: 'Oswald', sans-serif;
-    color:#D7E3E9;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: justify;
-    padding-left: 5px;
-    line-height:0.5;
-}
-
-/*STYLE FOR h3 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for description snippet)*/
-.listing-template .section-content .item-details h3 {
-    font-family: 'Oswald', sans-serif;
-    color:#9e3754;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 8px;
-    line-height:0.25;
 }
 
 /*STYLE FOR THE PHOTO GALLERY SUB-SECTION WRAPPER*/
@@ -191,6 +159,126 @@
     background-color: #9e3754;
 }
 
+/*STYLE FOR THE PHOTO GALLERY TEXT (center it under thumbs)*/
+.gallery p{
+    text-align: center;
+}
+
+/*STYLE FOR THE ITEM DETAILS SUB-SECTION WRAPPER*/
+.listing-template .section-content .listing-details{
+    min-height:200px;
+    width: 295px;
+    /*border: 1px solid #D7E3E9;*/
+    margin: 2px;
+    padding:1px;
+    float: right;
+
+}
+
+/*STYLE FOR h1 HEADLINES IN ITEM DETAILS SUB-SECTION (using for designer brand)*/
+.listing-template .section-content .listing-details h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color:#D7E3E9;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    padding-left: 5px;
+}
+
+/*STYLE FOR h3 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for description snippet)*/
+.listing-template .section-content .listing-details h3 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color:#9e3754;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+/*STYLE FOR h4 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for condition)*/
+.listing-template .section-content .listing-details h4{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color:#9e3754;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*STYLE FOR TABS*/
+
+.tabs {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.tabs li {
+    display: inline;
+}
+
+.tabs a{
+    border: 1px solid #D7E3E9;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: oswald, sans-serif;
+    font-size: 14px;
+    color: #D7E3E9;
+    font-weight: 300;
+}
+
+.tabs a.active {
+    background-color:#2B596F;
+}
+
+.tabs a:hover {
+    background-color: #D7E3E9;
+    color: #2B596F;
+}
+
+.listing-details dl * {
+    margin: 0;
+    padding: 0;
+}
+
+.listing-details dt{
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #D7E3E9;
+    font-weight: 700;
+}
+
+.listing-details dd{
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #042839;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.item-content {
+    border: 1px solid #D7E3E9;
+    margin-top: 5px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+}
+
+
 /*STYLE FOR THE NOTES SECTION <<CLEAR THE float'S FROM ABOVE>>*****/
 .section-notes {
     padding-top: 10px;
@@ -205,15 +293,3 @@
     text-align: center;
 }
 
-/***************************************************/
-
-
-.section-notes p{
-    color: #2B596F;
-    padding-bottom: 5px;
-    font-weight: 400;
-}
-
-.gallery p{
-    text-align: center;
-}

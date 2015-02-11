@@ -5,6 +5,7 @@
     <title>DOBOYO ReFASHION Test  Template 2.0</title>
     <link rel="stylesheet" href="doboyo2.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="listing-template">
@@ -39,7 +40,7 @@
                 <div class="gallery">
                     <div class="preview" align="center">
                         
-                        <img name="preview" src="http://placehold.it/400" alt="">
+                        <img name="preview" src="http://placehold.it/400" alt="Large photo">
                     
                     </div> <!-- end image preview div -->
 
@@ -61,44 +62,63 @@
                             <li><img onmouseover="preview.src=img11.src" name="img11" src="http://placehold.it/400" alt="Photo 11"></li>
                             <li><img onmouseover="preview.src=img12.src" name="img12" src="http://placehold.it/400" alt="Photo 12"></li>
                         </ul>
-                        <p>Hover over thumbnail for larger view.</p>
+                        <h6>Hover over thumbnail for larger view.</h6>
                     </div> <!-- end thumbnail div -->
 
                     
                 </div>  <!-- end the gallery div -->
                 
-            <div class="item-details">
+            <div id="page" class="listing-details">
 
                 <h1>LAUREN RALPH LAUREN</h1>
-                <h3>Women's Knit Top</h3>
+                <h3>Women's Crew Neck Top</h3>
 
+                <ul class="tabs">
+                    <li><a href="#item-details">Details</a></li>
+                    <li><a href="#item-sizing">Sizing</a></li>
+                    <li><a href="#item-condition">Condition</a></li>
+                </ul>
+                <div id="item-details" class="item-content">
+                    <dl>
+                        <dt>Sleeve Style:</dt>
+                            <dd>Short Sleeve</dd>
+                        <dt>Neckline:</dt>
+                            <dd>Round neck</dd>
+                        <dt>Closure:</dt>
+                            <dd>Pull-over with 5 snap placket at neck</dd>
+                        <dt>Embellishments:</dt>
+                            <dd>3 snap closure detail on sleeves</dd>
+                        <dt>Material:</dt>
+                            <dd>100% Cotton knit</dd>
+                        <dt>Color/Pattern:</dt>
+                            <dd> Black horizontal grouped stripes on white.</dd>
+                    </dl>
+                </div>
+                <div id="item-sizing" class="item-content">
+                    <dl>
+                        <dt>Tagged Size:</dt>
+                            <dd>Petite Small (PS)</dd>
+                        <dt>Chest:</dt>
+                            <dd>16" measured straight across armpit to armpit</dd>
+                        <dt>Shoulders:</dt>
+                            <dd>13 1/2" measured straight across at shoulder seams</dd>
+                        <dt>Sleeve length:</dt>
+                            <dd>9 1/2" from shoulder seam</dd>
+                        <dt>Overall length:</dt>
+                            <dd>20 1/2" from nape of neck to bottom hem</dd>
+                    </dl>
+                </div>
+                <div id="item-condition" class="item-content">
+                    <h4>Excellent used condition!</h4>
+                    <p>No holes tears, snags or stains.  All snaps available and functioning.</p>
+                </div>
 
             </div> <!-- end item details section -->
             
         </div> <!-- end content section -->
 
-
-        <div class="section-notes">
-            <div class="tabs">
-                <ul>
-                    <li>About Us</li>
-                    <li>Payment</li>
-                    <li>Shipping</li>
-                </ul>
-                <div>
-                    <p>From a smoke-free home with dogs.  Our product is acquired from various sources and we cannot attest to whether previous owners were smoke or pet free. All clothing is sold as pre-owned in excellent condition unless otherwise stated and should be considered sold “as-is”.  We strive to offer the highest quality maternity and other clothing and will do our very best to identify any condition issues in the condition description. Returns will gladly be honored for gross listing errors on our behalf.  Be warned, we have a phobia of irons!</p>
-                </div>
-                <div>
-                    <p>Payment by Paypal ONLY.  Expected within 48 hours on auction and ASAP on buy it now items.  Thanks!</p>
-                </div>
-                <div>
-                    <p>All shipping is via USPS to Paypal verified addresses.  All items will be securely packed and shipped with care and will typically ship within one business day of receiving payment.  Items 13oz and under will ship via 1st Class Package.  Books and CD’s over 13oz will ship via USPS Media Mail.  All other items will ship priority mail.  If you would like to make alternate shipping arrangements, just email us prior to paying.</p>
-                    <p>For our INTERNATIONAL customers, all shipping will be via the Ebay Global Shipping Program.  If your country is not included in the program, please contact us before bidding/purchasing.  Thank you!</p>
-                    <p>Of course we will combine shipping! Just request an invoice PRIOR to paying!</p>
-                </div>
-            </div>
-            
-        </div>
+        
+        
 
 
 
@@ -109,12 +129,12 @@
 
     </div> <!-- end listing template -->
 
+    <script type="text/javascript" src="tabs.js"></script>
 
-
-    <!-- ******************************************************* -->
-    <!-- ************END CUT HERE FOR EBAY LISTING************** -->
-    <!-- *******Copyright (c) chris e pearson 2013-2015********* -->
-    <!-- ******************************************************* -->
+<!-- ******************************************************* -->
+<!-- ************END CUT HERE FOR EBAY LISTING************** -->
+<!-- *******Copyright (c) chris e pearson 2013-2015********* -->
+<!-- ******************************************************* -->
 
 </body>
 </html>
