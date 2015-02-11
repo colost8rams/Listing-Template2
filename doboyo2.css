@@ -61,6 +61,7 @@
 /*STYLE FOR TOP NAV BAR ul*/
 .listing-template .nav-bar ul {
     padding:0;
+    list-style-type: none;
 }
 
 /*STYLE FOR NAV BAR LINKS (font related)*/
@@ -120,6 +121,7 @@
     padding: 0;
     margin: 0;
     text-align:center;
+    list-style-type: none;
 }
 
 /*STYLE FOR THE INDIVIDUAL THUMBNAIL WRAPPERS*/
