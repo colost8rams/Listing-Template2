@@ -161,11 +161,6 @@
     background-color: #9e3754;
 }
 
-/*STYLE FOR THE PHOTO GALLERY TEXT (center it under thumbs)*/
-.gallery p{
-    text-align: center;
-}
-
 /*STYLE FOR THE ITEM DETAILS SUB-SECTION WRAPPER*/
 .listing-template .section-content .listing-details{
     min-height:200px;
@@ -178,7 +173,7 @@
 }
 
 /*STYLE FOR h1 HEADLINES IN ITEM DETAILS SUB-SECTION (using for designer brand)*/
-.listing-template .section-content .listing-details h1 {
+.listing-template h1 {
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -190,7 +185,7 @@
 }
 
 /*STYLE FOR h3 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for description snippet)*/
-.listing-template .section-content .listing-details h3 {
+.listing-template h3 {
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -202,7 +197,7 @@
 }
 
 /*STYLE FOR h4 HEADLINES <<bright pink>> IN ITEM DETAILS SUB-SECTION (using for condition)*/
-.listing-template .section-content .listing-details h4{
+.listing-template h4 {
     padding: 10px 0 0 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -211,9 +206,9 @@
     font-weight: 400;
 }
 
-
-/*STYLE FOR TABS*/
-
+/*******************************************/
+/**************STYLE FOR TABS***************/
+/*******************************************/
 .tabs {
     padding: 0;
     margin: 0;
@@ -247,6 +242,21 @@
     color: #2B596F;
 }
 
+/*******************************************/
+/***********STYLE FOR TAB PANELS************/
+/*******************************************/
+.item-content {
+    border: 1px solid #D7E3E9;
+    margin-top: 5px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 10px 5px 10px;
+}
+
 .listing-details dl * {
     margin: 0;
     padding: 0;
@@ -269,21 +279,9 @@
     padding-bottom: 5px;
 }
 
-.item-content {
-    border: 1px solid #D7E3E9;
-    margin-top: 5px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    border-top-right-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 0px 10px 5px 10px;
-}
-
 
 /*STYLE FOR THE NOTES SECTION <<CLEAR THE float'S FROM ABOVE>>*****/
-.section-notes {
+.listing-template .section-notes {
     padding-top: 20px;
     clear: both; 
 }
