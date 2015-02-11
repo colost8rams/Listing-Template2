@@ -23,7 +23,6 @@
     color: #042839;
     font-weight: 400;
     text-align: justify;
-
 }
 
 /*BASE STYLE FOR H6 HEADERS (currently used in footer)*/
@@ -98,7 +97,6 @@
     background-color:#9e3754;
 }
 
-
 /*STYLE FOR THE MAIN CONTENT SECTION WRAPPER*/
 .listing-template .section-content {
     padding-top:15px;
@@ -169,7 +167,6 @@
     margin: 2px;
     padding:1px;
     float: right;
-
 }
 
 /*STYLE FOR h1 HEADLINES IN ITEM DETAILS SUB-SECTION (using for designer brand)*/
@@ -262,7 +259,7 @@
     padding: 0;
 }
 
-.listing-details dt{
+.listing-details dt {
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #D7E3E9;
@@ -270,7 +267,7 @@
     text-transform: capitalize;
 }
 
-.listing-details dd{
+.listing-details dd {
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #042839;
