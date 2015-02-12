@@ -41,7 +41,25 @@
 *    click: This callback is triggered just as a tab is clicked. Returning false cancels the entire event.
 *    show: This callback is triggered after the active class and tab has been set, but just before the
 *        tab targets are shown. Returning false means you handled the showing/hiding of the tab targets.
+*
+*   NOTE: I have modified this code to make it friendly to use on Ebay.  The .replace() functions have
+*   been replaced with a custom function .switcher(). - Chris E. Pearson
 */
+
+String.prototype.switcher = function(pattern, nw) {
+   var curidx = 0, len = this.length, patlen = pattern.length, res = "";
+   while(curidx < len) {
+       var nwidx = this.indexOf(pattern, curidx);
+       console.log(nwidx);
+       if(nwidx == -1) {
+           break;
+       }
+       res = res + this.substr(curidx, nwidx - curidx);
+       res = res + nw;
+       curidx = nwidx + patlen;
+   }
+   return res;
+};
 
 var Tabs = {
     className: "tabs",
@@ -157,7 +175,7 @@ Tabs.Element = {
     },
 
     removeClass: function (element, className) {
-        element.className = element.className.replace(new RegExp("(^|\\s)" + className + "(\\s|$)"), "$1");
+        element.className = element.className.switcher(new RegExp("(^|\\s)" + className + "(\\s|$)"), "$1");
         if (element.className === " ") {
             element.className = "";
         }
@@ -182,7 +200,7 @@ Tabs.Element = {
         if (element.currentStyle) {    // IE.
             return element.currentStyle[property];
         }
-        property = property.replace(/([A-Z])/g, "-$1").toLowerCase();    // Turns propertyName into property-name.
+        property = property.switcher(/([A-Z])/g, "-$1").toLowerCase();    // Turns propertyName into property-name.
         var style = document.defaultView.getComputedStyle(element, "");
         if (style) {
             return style.getPropertyValue(property);
