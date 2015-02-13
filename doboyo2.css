@@ -177,6 +177,7 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
     color:#D7E3E9;
+    text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
     text-align: right;
@@ -188,6 +189,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
     color:#9e3754;
     font-size: 20px;
     font-weight: 400;
@@ -201,6 +203,7 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
     color:#9e3754;
+    text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
 }
@@ -276,6 +279,7 @@
     font-weight: 400;
     padding-left: 5px;
     padding-bottom: 5px;
+    text-transform: capitalize;
 }
 
 
