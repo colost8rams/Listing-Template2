@@ -4,16 +4,48 @@
 		"selected_items":
 		[
 			[
+				"p",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"Te",
+				"text-decoration"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
 				"pa",
 				"padding"
 			],
 			[
 				"m",
 				"margin"
-			],
-			[
-				"p",
-				"padding"
 			],
 			[
 				"u",
@@ -43,7 +75,36 @@
 			"file": "doboyo2.css",
 			"settings":
 			{
-				"buffer_size": 3567,
+				"buffer_size": 6745,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doboyo2.html",
+			"settings":
+			{
+				"buffer_size": 9914,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Errors found while checking this document as HTML5!\n\nLine 43: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 49: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 50: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 51: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 52: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 53: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 54: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 58: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 59: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 60: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 61: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 62: The name attribute on the img element is obsolete. Use the id attribute instead.\n\nLine 63: The name attribute on the img element is obsolete. Use the id attribute instead.\n\n",
+			"settings":
+			{
+				"buffer_size": 1236,
+				"line_ending": "Windows",
+				"name": "W3C Validation Errors",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "/*jslint browser: true, plusplus: true, sloppy: true */\n/*\n*    TABS\n*    ---------------------------------------------------------------------------\n*    Copyright (c) 2009-2013 Bo Frederiksen\n*    https://github.com/bofrede/Tabs\n*\n*    Copyright (c) 2008 Dan Peverill\n*    http://www.danpeverill.com\n*\n*    Copyright (c) 2005 John Resig\n*    http://ejohn.org/projects/flexible-javascript-events/\n*\n*    LICENSE\n*    ---------------------------------------------------------------------------\n*    The MIT License\n*    http://www.opensource.org/licenses/mit-license.php\n*\n*    INSTALLATION\n*    ---------------------------------------------------------------------------\n*    Tabs are controlled with links. Each link has a target that it is attached to and specified\n*    as an #anchor in the href attribute. Example: <a href=\"#tab\">tab</a>. The #anchor\n*    is the id of the actual target.\n*\n*    Tabs can be grouped or single. Grouping tabs you specify the parent\n*    class of the tabs with the \"tabs\" class. For a single tab just add the class \"tabs\" to it.\n*\n*    Active tabs given the class \"active\" by default. Inactive tabs have no class. You may\n*    specify the default active/inactive tabs by adding the class \"active\" to any of them in\n*    your HTML.\n*\n*    Tab targets are automatically shown and hidden as you click the appropriate tabs. You can control\n*    this behavior with callback functions (see below). It is up to you to style the tabs and tab targets\n*    with CSS. This script only toggles the active class on tabs and shows/hides the tab targets.\n*\n*    You may add custom tabs yourself with Tabs.create(tabs, callbacks).\n*\n*    Callbacks is an optional argument. Callbacks is an object with two optional properties: click, show.\n*    These options are a function that handles the appropriate callback. Each callback can accept\n*    two arguments, the click event and the currently active tab target. \"this\" refers to the tab.\n*    click: This callback is triggered just as a tab is clicked. Returning false cancels the entire event.\n*    show: This callback is triggered after the active class and tab has been set, but just before the\n*        tab targets are shown. Returning false means you handled the showing/hiding of the tab targets.\n*/\n\nvar Tabs = {\n    className: \"tabs\",\n    activeClass: \"active\",\n\n    \n\n    addEvent: function (obj, type, fn) {\n        if (obj.attachEvent) {\n            obj['e' + type + fn] = fn;\n            obj[type + fn] = function () {\n                obj['e' + type + fn](window.event);\n            };\n            obj.attachEvent('on' + type, obj[type + fn]);\n        } else {\n            obj.addEventListener(type, fn, false);\n        }\n    },\n\n    create: function (tabs, callbacks) {\n        if (!tabs.length) {\n            this.createSingle(tabs, callbacks);\n        } else {\n            this.createGroup(tabs, callbacks);\n        }\n    },\n\n    createSingle: function (tab, callbacks) {\n        if (this.Element.hasClass(tab, this.activeClass)) {\n            this.Element.show(this.getTarget(tab));\n        }\n        this.addEvent(tab, \"click\", function (e) {\n            if (Tabs.callback(this, callbacks, \"click\", e)) {\n                Tabs.Element.toggleClass(this, Tabs.activeClass);\n                if (Tabs.callback(this, callbacks, \"show\", e)) {\n                    Tabs.Element.toggleVisibility(Tabs.getTarget(this));\n                }\n            }\n            if (e.preventDefault) { // For DOM compliant browsers http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-Event-preventDefault\n                e.preventDefault();\n            } else { // For MSIE http://msdn2.microsoft.com/en-us/library/ms536913.aspx\n                e.returnValue = false;\n            }\n        });\n    },\n\n    createGroup: function (tabs, callbacks) {\n        var active,\n            tab,\n            i;\n        function tabClickHandler(e) {\n            if (Tabs.callback(this, callbacks, \"click\", e, active)) {\n                Tabs.Element.removeClass(active, Tabs.activeClass);\n                Tabs.Element.addClass(this, Tabs.activeClass);\n                var from = active;\n                active = this;\n                if (Tabs.callback(this, callbacks, \"show\", e, from)) {\n                    Tabs.Element.hide(Tabs.getTarget(from));\n                    Tabs.Element.show(Tabs.getTarget(this));\n                }\n            }\n            if (e.preventDefault) { // For DOM compliant browsers http://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/events.html#Events-Event-preventDefault\n                e.preventDefault();\n            } else { // For MSIE http://msdn2.microsoft.com/en-us/library/ms536913.aspx\n                e.returnValue = false;\n            }\n        }\n        for (i = 0; i < tabs.length; i++) {\n            tab = tabs[i];\n            if (this.Element.hasClass(tab, this.activeClass)) {\n                active = tab;\n                this.Element.addClass(tab);\n                this.Element.show(this.getTarget(tab));\n            } else {\n                this.Element.hide(this.getTarget(tab));\n            }\n            this.addEvent(tab, \"click\", tabClickHandler);\n        }\n        if (!active) {\n            tab = tabs[0];\n            active = tab;\n            this.Element.addClass(tab, this.activeClass);\n            this.Element.show(this.getTarget(tab));\n        }\n    },\n\n    callback: function (element, callbacks, type, e, active) {\n        return !(callbacks && callbacks[type] && callbacks[type].call(element, e, active));\n    },\n\n    getTarget: function (tab) {\n        var match = /#([\\w\\-]+)$/.exec(tab.href),\n            target;\n        if (match && (target = document.getElementById(match[1]))) {\n            return target;\n        }\n    },\n\n    getElementsByClassName: function (className, tag) {\n        var elements = document.getElementsByTagName(tag || \"*\"),\n            list = [],\n            i;\n        for (i = 0; i < elements.length; i++) {\n            if (this.Element.hasClass(elements[i], this.className)) {\n                list.push(elements[i]);\n            }\n        }\n        return list;\n    }\n};\n\nTabs.Element = {\n    addClass: function (element, className) {\n        element.className += (element.className ? \" \" : \"\") + className;\n    },\n\n    removeClass: function (element, className) {\n        element.className = element.className.replace(new RegExp(\"(^|\\\\s)\" + className + \"(\\\\s|$)\"), \"$1\");\n        if (element.className === \" \") {\n            element.className = \"\";\n        }\n    },\n\n    hasClass: function (element, className) {\n        return element.className && (new RegExp(\"(^|\\\\s)\" + className + \"(\\\\s|$)\")).test(element.className);\n    },\n\n    toggleClass: function (element, className) {\n        if (this.hasClass(element, className)) {\n            this.removeClass(element, className);\n        } else {\n            this.addClass(element, className);\n        }\n    },\n\n    getStyle: function (element, property) {\n        if (element.style[property]) {\n            return element.style[property];\n        }\n        if (element.currentStyle) {    // IE.\n            return element.currentStyle[property];\n        }\n        property = property.replace(/([A-Z])/g, \"-$1\").toLowerCase();    // Turns propertyName into property-name.\n        var style = document.defaultView.getComputedStyle(element, \"\");\n        if (style) {\n            return style.getPropertyValue(property);\n        }\n    },\n\n    show: function (element) {\n        element.style.display = \"\";\n        if (this.getStyle(element, \"display\") === \"none\") {\n            element.style.display = \"block\";\n        }\n    },\n\n    hide: function (element) {\n        element.style.display = \"none\";\n    },\n\n    isVisible: function (element) {\n        return this.getStyle(element, \"display\") !== \"none\";\n    },\n\n    toggleVisibility: function (element) {\n        if (this.isVisible(element)) {\n            this.hide(element);\n        } else {\n            this.show(element);\n        }\n    }\n};\n\n(function () {\n    var elements = Tabs.getElementsByClassName(Tabs.className),\n        i,\n        element,\n        tabs,\n        group,\n        t;\n    for (i = 0; i < elements.length; i++) {\n        element = elements[i];\n        if (element.tagName === \"A\" || element.tagName === \"AREA\") {\n            Tabs.create(element);\n        } else {    // Group\n            tabs = element.getElementsByTagName(\"a\");\n            if (tabs.length === 0) {\n                tabs = element.getElementsByTagName(\"area\");\n            }\n            group = [];\n            for (t = 0; t < tabs.length; t++) {\n                if (Tabs.getTarget(tabs[t])) {\n                    group.push(tabs[t]);    // Only group actual tab links.\n                }\n            }\n            if (group.length) {\n                Tabs.create(group);\n            }\n        }\n    }\n}());\n",
+			"file": "tabs-redo.js",
+			"file_size": 9534,
+			"file_write_time": 130681827575324046,
+			"settings":
+			{
+				"buffer_size": 8866,
 				"line_ending": "Windows"
 			}
 		}
@@ -80,10 +141,25 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
-		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
+		"/C/Users/Chris and Barb/Documents/GitHub/Tabs-1/demo.js",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.html",
 		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.css",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/tabs-redo.js",
+		"/C/Users/Chris and Barb/Desktop/EBAY/code/doboyo2-1.html",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/tabs.js",
+		"/C/Users/Chris and Barb/Desktop/EBAY/code/doboyo2.html",
+		"/C/Users/Chris and Barb/Desktop/EBAY/code/doboyo2.css",
+		"/C/Users/Chris and Barb/Desktop/EBAY/code/tabs.js",
+		"/C/Users/Chris and Barb/Documents/GitHub/Tabs-1/index.html",
+		"/C/Users/Chris and Barb/Documents/GitHub/Tabs-1/tabs.js",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/index.html",
+		"/C/Users/Chris and Barb/Documents/GitHub/Tabs-1/stylesheet.css",
+		"/C/Users/Chris and Barb/Desktop/HTML/tabs-test/test01.html",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template/doboyo.css",
+		"/C/Users/Chris and Barb/Documents/GitHub/test.html",
+		"/C/Users/Chris and Barb/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.sublime-workspace",
+		"/C/Users/Chris and Barb/Documents/GitHub/Listing-Template2/doboyo2.sublime-project",
 		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/index.php",
 		"/C/Users/Chris and Barb/Desktop/HTML/simpletabs/js/simpletabs_1.3.js",
 		"/C/Users/Chris and Barb/Desktop/HTML/hoverbox/hoverbox/css/hoverbox.css",
@@ -112,7 +188,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -126,6 +202,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"replace",
+			"replace\n",
+			"\n",
+			"^(\\r|\\n\\r?)",
+			" ",
+			"^\\n",
+			" ",
 			"doboyo_Household_W0QQfsubZ5511751012",
 			"listing-content",
 			"listing",
@@ -134,9 +217,10 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -147,7 +231,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -156,7 +240,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3567,
+						"buffer_size": 6745,
 						"regions":
 						{
 						},
@@ -164,18 +248,107 @@
 						[
 							[
 								0,
-								0
+								6745
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 2880.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "doboyo2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9616,
+								9616
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2070.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1236,
+								1236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tabs-redo.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								8866
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -223,7 +396,7 @@
 	"project": "doboyo2.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
